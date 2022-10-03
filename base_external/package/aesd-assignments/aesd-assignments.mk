@@ -1,4 +1,3 @@
-
 ##############################################################
 #
 # AESD-ASSIGNMENTS
@@ -24,7 +23,6 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
 	# AESD Socket app
 	$(INSTALL) -m 0755 $(@D)/server/aesdsocket $(TARGET_DIR)/usr/bin
 	$(INSTALL) -m 0755 $(@D)/assignment-autotest/test/assignment5/* $(TARGET_DIR)/usr/bin
-	
 	$(INSTALL) -m 0755 $(@D)/server/StartAesdDocket.sh $(TARGET_DIR)/etc/init.d/S99aesdsocket
 	
 endef
